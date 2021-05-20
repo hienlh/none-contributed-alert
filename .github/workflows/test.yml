@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: A job to send alert email.
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Check and send email
+        id: alert
+        uses: ./
+        with:
+          email: "hienlh1298@gmail.com"
+      - name: Get the output
+        run: echo "The output was ${{ steps.alert.outputs.message }}"

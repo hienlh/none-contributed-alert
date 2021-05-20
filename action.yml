@@ -1,0 +1,13 @@
+name: "None contributed alert"
+description: "Alert every day when you do not contribute anything to Github"
+inputs:
+  email:
+    description: "Who to greet"
+    required: true
+    default: "example@example.com"
+outputs:
+  message:
+    description: "Result message"
+runs:
+  using: "node12"
+  main: "dist/index.js"

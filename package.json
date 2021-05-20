@@ -1,0 +1,15 @@
+{
+  "name": "none-contributed-alert",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com:hienlh/none-contributed-alert.git",
+  "author": "Hien <hienlh1298@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^5.0.0"
+  },
+  "scripts": {
+    "build": "ncc build index.js --license LICENSE"
+  }
+}
