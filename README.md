@@ -1,5 +1,8 @@
 # None contributed alert action
 
+[![license](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+[![market](https://img.shields.io/badge/Get_it-on_the_Marketplace-informational.svg)](https://github.com/marketplace/actions/none-contributed-alert)
+
 ❗ This action will send an email to alert 📣  you when today you do not contribute to Github
 
 ## Inputs
