@@ -1,6 +1,6 @@
 # None contributed alert action
 
-This action will send an email to alert when today you do not contributed
+❗ This action will send an email to alert 📣  you when today you do not contribute to Github
 
 ## Inputs
 
@@ -20,4 +20,25 @@ The result message.
 uses: hienlh/none-contributed-alert@v1.1
 with:
   email: "example@example.com"
+```
+
+## Full example
+
+```yaml
+name: None contributed alert
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs at 12pm UTC => 19pm UTC+7
+    - cron: "0 12 * * *"
+
+jobs:
+  none-contributed-alert:
+    name: None contributed alert
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hienlh/none-contributed-alert@v1.0.0
+        with:
+          email: "example@example.com"
 ```
