@@ -15,8 +15,8 @@ const main = async () => {
             const res = await axios.post(
                 'https://simple-send-mail-service.herokuapp.com/send-mail', {
                 email: email,
-                title: `Your current contributed count is ${count}`,
-                body: `Your current contributed count is ${count}`,
+                title: `📣  NONE CONTRIBUTED ALERT`,
+                body: `You have no contributes to Github today. Please commit something!`,
             });
 
             if (res.statusCode >= 400) {
