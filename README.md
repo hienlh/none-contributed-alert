@@ -20,7 +20,7 @@ The result message.
 ## Example usage
 
 ```yaml
-uses: hienlh/none-contributed-alert@v1.1
+uses: hienlh/none-contributed-alert@v1.0.0
 with:
   email: "example@example.com"
 ```
