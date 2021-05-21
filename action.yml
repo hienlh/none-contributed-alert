@@ -1,5 +1,9 @@
 name: "None contributed alert"
 description: "Alert every day when you do not contribute anything to Github"
+author: "HienLe <hienlh1298@gmail.com>"
+branding:
+  icon: "alert-circle"
+  color: "red"
 inputs:
   email:
     description: "Who to greet"
